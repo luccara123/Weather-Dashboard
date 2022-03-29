@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+.informations{
+    padding: 5px;
+    font-size: 40px;
+    color: #333;
+}
+
+.main-title{
+    background-color: blue;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    font-size: 4rem;
+}
+
+main{
+    margin: 50px;
+    padding: 25px;
+}
+
+.card-title{
+    font-size: 50px;
+}

@@ -14,43 +14,52 @@
             <h1 class="main-title"> Weather Dashboard</h1>
         </nav>
     </header>
+    
 
-    <!--Search for a city-->
-    <section id="search-section" class="search-section">
-        <div class="row">
-            <div class="columnOne">
-                <h1>Search for a city</h1>
-                <input type="text" class="form-control w-25" placeholder="Toronto...">
-            </div>
-            <div class="btn-group w-25">
-                <button class="btn btn-primary search" type="button" id="search-button"><i class="fas fa-search"></i></button>
+    <main>
+         <div class="col-md-12">
+            <div class="row">
+                <!--Search for a city-->
+                <section id="search-section" class="search-section col-md-3">
+                    <h1>Search for a city</h1>
+                    <form>
+                        <input type="search" class="form-control mb-4 ds-input" placeholder="Enter city name">                     
+                        <button class="btn btn-primary mb-3" type="submit" id="search-button"><i class="fas fa-search"></i></button>
+                    </form>
+                     <!--History for the cities-->
+                    <ul class="list-group" id="search-history"></ul>
+                </section>
+
+
+                <section class="main-container col-md-9">
+                    <div class="card mt-2">
+                        <div class="card-body">
+                        <!--Current city container-->
+                            <div class="current-city d-flex flex-row">
+                                <h2 class="card-title align-self-center" id="city-name"></h2>
+                            </div>
+                                <ul>
+                                    <li class="card-subtitle informations" id="city-temp">Temperature:</li>
+                                    <li class="card-subtitle informations" id="city-humid">Humidity:</li>
+                                    <li class="card-subtitle informations" id="city-wind">Wind speed:</li>
+                                    <li class="card-subtitle informations" id="city-uv">UV Index:</li>
+                                </ul>
+                        </div>
+                    </div>
+
+                        <!--5-day Forecast-->
+                    <div class="row 5-forecast">
+                        <h2 class="card-title mt-5">5-Day Forecast</h2>
+                        <div class="row justify-content-between" id="five-boxes">
+
+                        </div>
+                    </div>
+                </section>
+
             </div>
         </div>
-    </section>
-
-    <!--History for the cities-->
-    <div class="history-container"></div>
-
-    <section class="main-container">
-       <div class="row">
-           <!--Current city container-->
-            <div class="current-city">
-                <h2></h2>
-                <h2></h2>
-                <i></i>
-                <div class="current-city-informations">
-
-                </div>
-            </div>
-
-            <!--5-day Forecast-->
-            <div class="row 5-forecast">
-
-            </div>
-       </div>
-    </section>
-
-
+    </main>
+    <script src="https://kit.fontawesome.com/2d9e8320eb.js" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </body>
