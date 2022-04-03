@@ -10,16 +10,17 @@ ul{
 
 .informations{
     padding: 5px;
-    font-size: 40px;
+    font-size: 20px;
     color: #333;
+
 }
 
 .main-title{
     background-color: blue;
     color: #fff;
-    padding: 40px;
+    padding: 30px;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 main{
@@ -28,5 +29,13 @@ main{
 }
 
 .card-title{
-    font-size: 50px;
+    font-size: 40px;
+}
+
+#five-day {
+    font-size:18px;
+}
+
+#search-form{
+    display: flex;
 }
